@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinYSlim"
+             x:Class="XamarinYSlim.MainPage">
+    <StackLayout>
+        <Label
+           Text="Palabra a cifrar:" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+
+        <Entry
+           x:Name="palabra"
+            Placeholder="Escribe aqui"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"/>
+
+        <Label
+           Text="Palabra cifrada:" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+        
+        <Label 
+           x:Name="texto"
+           IsVisible="False"
+           Text="" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+        <Button
+            x:Name="button"
+            Text="Welcome to Xamarin Forms!" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        
+    </StackLayout>
+
+</ContentPage>
