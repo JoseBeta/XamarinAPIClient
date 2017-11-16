@@ -28,9 +28,9 @@
            HorizontalOptions="Center" />
         <Button
             x:Name="button"
-            Text="Welcome to Xamarin Forms!" 
+            Text="Enviar" 
             VerticalOptions="Center" 
-            HorizontalOptions="Center"/>
+            HorizontalOptions="FillAndExpand"/>
         
     </StackLayout>
 
