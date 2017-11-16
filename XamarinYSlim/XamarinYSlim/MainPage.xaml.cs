@@ -27,8 +27,15 @@ namespace XamarinYSlim
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            texto.Text = await cliente.Get(palabra.Text.ToLower());
-            texto.IsVisible = true;
+            if (palabra.Text != null) {
+                texto.Text = await cliente.Get(palabra.Text.ToLower());
+                texto.IsVisible = true;
+            }
+            else {
+                texto.Text = "El campo esta vacio";
+                texto.IsVisible = true;
+            }
+
         }
     }
 }
